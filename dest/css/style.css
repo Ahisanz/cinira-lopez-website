@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #000; }
+
+.header h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 5rem;
+  color: #EF8354;
+  padding: 2rem 0 0;
+  text-align: center;
+  line-height: .5; }
+
+.header h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #fff;
+  padding-bottom: 2rem;
+  text-align: center;
+  width: 250px;
+  display: block;
+  margin: 0 auto; }
+
+.main {
+  position: relative; }
+
+.nav {
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  overflow: hidden; }
+  .nav-list {
+    list-style: none; }
+    .nav-list__title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 4rem;
+      text-align: center;
+      line-height: .8;
+      color: #fff;
+      margin: 0 auto;
+      width: 280px; }
+    .nav-list__description {
+      display: none; }
+    .nav-list__item {
+      display: flex;
+      align-items: center; }
+    .nav-list__button {
+      background-color: transparent;
+      border: none;
+      width: 100%; }
+      .nav-list__button:focus {
+        outline: 2px #fff solid; }
+
+.videos-list__item {
+  position: relative;
+  list-style: none;
+  height: 164px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s ease-in; }
+  .videos-list__item::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.5); }
+
+.videos video {
+  width: 100%;
+  height: auto;
+  transition: all .5s ease-in-out; }
